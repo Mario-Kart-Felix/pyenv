@@ -1,5 +1,144 @@
 ## Version History
 
+## Release 2.2.2
+
+* Add support for macOS Apple M1 (#2164)
+
+## Release 2.2.1
+
+* Add CPython 3.9.9 (#2162)
+* Add CPython 3.9.8 (#2152)
+* Add Add micropython 1.17 (#2158)
+* Add Add micropython 1.16 (#2158)
+* Patch 3.10.0 configure, fixes https://bugs.python.org/issue45350 (#2155)
+* Use command and type instead of which (#2144)
+* Add definition of pyenv help in COMMANDS.md #2139
+* Use OpenSSL 1.0 for CPython 2.7.18
+
+## Release 2.2.0
+* Adding PyPy release 7.3.7 (Python 3.7 and 3.8). (#2132)
+* Append Homebrew custom prefix to search path (#1957)
+* Add documentation for init command (#2125)
+* Add setup instructions for the case when one installs Pyenv as part of a batch job (#2127)
+* Add documentation for completions command (#2126)
+* Default --with-universal-archs to universal2 on Apple Silicon (#2122)
+* Update README.md (#2120)
+* Add GraalPython 21.3.0 (#2117)
+* Pypy ver 7.3.6 - python 3.7 and python 3.8 (#2111)
+* Discover Tcl/Tk reliably and use active version (#2106)
+* Fish installation instructions (#2104)
+* Add CPython 3.11.0a1 (#2099)
+
+## Release 2.1.0
+* Fix mambaforge-pypy3 build (#2096)
+* Add Python 3.10.0 (#2093)
+* Add documentation for exec command (#2090)
+* Add documentation for shims command (#2091)
+* Add documentation for hooks command (#2089)
+* Add documentation for root command (#2088)
+* Add documentaion for prefix command (#2087)
+* Update to Pyston's v2 package of the 2.3.1 release (#2078)
+* Add pyston-2.3.1 support (#2075)
+* Don't update conda when installing pip (#2074)
+* Improve `add_miniconda.py` (#2072)
+* GitHub actions tests (#2073)
+* Fix sed commands (#2071)
+* macOS: fix the build of Python 2.7.18 on macOS 11.5.2 (Big Sur) + Apple Silicon (#2061)
+
+## Release 2.0.7
+* Update setup instructions in the Readme (#2067)
+* Allow tcl-tk as argument or try with homebrew by default (#1646)
+* Allow system Python in sbin (#2065)
+* Prevent addition of duplicate plugin dirs to PATH (#2045)
+* Disable coreutils on M1 Apple Silicon with arm64 (#2020)
+* Add Python 3.10.0rc2 (#2053)
+* Add space after `yes/no` prompt (#2040)
+* Add CPython v3.6.15 and v3.7.12 (#2052)
+* Add missing Python 2.6.x definitions and patches (#2051)
+* Fix build of ossaudiodev in Linux/FreeBSD for Python 2.6 (#2049)
+* Fix build of ossaudiodev in Linux/FreeBSD for Python 3.1 (#2047)
+
+## Release 2.0.6
+* Add CPython 3.9.7 (#2044)
+* Add CPython v3.8.12 (#2043)
+* Adapt conda.bash for bash associative array (#2037)
+
+## Release 2.0.5
+
+* Move man page to location where it can be automatically found by man (#2032)
+* Update checksums for CPython 3.10.0rc1 (#2025)
+* Remove 3.9.3 (#2022)
+* Add CPython 3.10.0rc1(#2023)
+
+## Release 2.0.4
+
+- Added scripts for rolling releases of Miniforge (#2019)
+- Update pyston-2.3 (#2017)
+- Add GraalPython 21.2.0 (#2018)
+- Add CPython  3.10.0b4 (#2013), (#2005)
+- Add Pyston 2.3 (#2012)
+
+## Release 2.0.3
+
+* Remove PATH warning (#2001)
+* Add Python 3.6.14, 3.7.11, 3.8.11, and 3.9.6 (#1996)
+* Miniforge minor update to 4.10.1-5 (#1992)
+* Suggest that fish users init in interactive mode (#1991)
+
+## Release 2.0.2
+
+* Miniforge minor update to 4.10.1-5 (#1992)
+* Suggest that fish users init in interactive mode (#1991)
+* Add 3.10.0b3 (#1988)
+* Revert "Drop inferring version to install from `pyenv local`" (#1984)
+* Use system Python3 for tests (#1979)
+* Check for shims in path with pure Bash (#1978)
+* Update setup instructions for debian, ubuntu etc. (#1977)
+
+## Release 2.0.1
+
+* Drop inferring version to install from `pyenv local` (#1907)
+* Create mambaforge-4.10.1-4 (#1971)
+* Add 3.10.0b2 recipe (#1966)
+* Fix .bashrc `echo` install syntax error (#1965)
+* Add explicit Zsh instructions for MacOS (#1964)
+* Install pip with pyston (#1955)
+* Mention log file if an error happened before building, too (#1537)
+* Add pypy3.7-7.3.5 (#1950)
+
+## Release 2.0.0
+
+* Support for CPython 3.9.5 has been added.
+* Support for CPython 3.8.10 has been added.
+* Support for CPython 3.10.0b1 has been added.
+* Support for GraalPython 21.1.0 has been added.
+* Support for  Anaconda 2021.05 has been added.
+* Support for   Miniforge3 4.10.1-1 has been added.
+* CPython 3.10-dev target branch renamed.
+* CPython 3.10-dev and 3.11-dev updated.
+* Bump OpenSSL to 1.1.1x for all Pythons that support MacOS 11
+* Update generated configuration files before run ./configure
+* Full shell configuration instructions placed into `pyenv init`
+* Prevent build from installing MacOS apps globally
+* ldflags_dirs is not needed for Python and causes failures
+* Report cache filename at download
+* Add micropython 1.15
+* Correct URLs for Stackless builds and add Stackless 2.7.16
+
+## Breaking changes
+* Split startup logic into PATH and everything else (https://github.com/pyenv/pyenv/issues/1649#issuecomment-694388530)
+
+## 1.2.27
+
+* Add GraalPython 21.1.0 (#1882)
+* Add CPython 3.10.0a7 (#1880)
+* Docs(README): fix info about version-file separator (#1874)
+* List versions starting with a dot (#1350)
+* Feat: support (skip) commented lines in version-file (#1866)
+* pypy3.7-7.3.4 (#1873)
+* Create miniforge3-4.10 (#1868)
+* Add CPython 3.9.4 (#1865)
+
 ## 1.2.26
 
 * Add CPython 3.9.4 (#1865)

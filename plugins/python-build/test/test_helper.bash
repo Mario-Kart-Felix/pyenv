@@ -25,6 +25,7 @@ stub() {
 
   export "${prefix}_STUB_PLAN"="${TMP}/${program}-stub-plan"
   export "${prefix}_STUB_RUN"="${TMP}/${program}-stub-run"
+  export "${prefix}_STUB_LOG"="${TMP}/${program}-stub-log"
   export "${prefix}_STUB_END"=
 
   mkdir -p "${TMP}/bin"
@@ -130,7 +131,7 @@ assert_output_contains() {
     echo "assert_output_contains needs an argument" >&2
     return 1
   fi
-  echo "$output" | $(type -p ggrep grep | head -1) -F "$expected" >/dev/null || {
+  echo "$output" | $(type -P ggrep grep | head -1) -F "$expected" >/dev/null || {
     { echo "expected output to contain $expected"
       echo "actual: $output"
     } | flunk

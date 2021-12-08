@@ -17,5 +17,5 @@ Make sure you have checked all steps below.
 - [ ] pyenv version:
 - [ ] Python version:
 - [ ] C Compiler information (e.g. gcc 7.3): 
-- [ ] Please attach verbose build log as gist
-  * You can turn on verbose debug logging using by setting `PYENV_DEBUG=1`, e.g. `env PYENV_DEBUG=1 pyenv install -v 3.6.4`
+- [ ] Please attach the debug trace of the failing command as a gist:
+  * Run `env PYENV_DEBUG=1 <faulty command> 2>&1 | tee trace.log` and attach `trace.log`. E.g. if you have a problem with installing Python, run `env PYENV_DEBUG=1 pyenv install -v <version> 2>&1 | tee trace.log` (note the `-v` option to `pyenv install`).
