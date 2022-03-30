@@ -1,5 +1,43 @@
 ## Version History
 
+## Release 2.2.5
+
+* Add CPython 3.10.3
+* Add CPython 3.9.11
+* Add CPython 3.8.13
+* Add CPython 3.7.13
+* Add CPython 3.11.0a6 (#2266)
+* Add PyPy 7.3.8 (#2253)
+* Add miniconda3-3.7-4.11.0, miniconda3-3.8-4.11.0, miniconda3-3.9-4.11.0 (#2268)
+* Add pyston-2.3.2 (#2240)
+* Fix UnicodeDecodeError for CPython 3.6.15 and 3.7.12 (#2237)
+* python-build: add URL for get-pip for Python 3.6 (#2238)
+* Bump openssl to 1.1.1n for CPython 3.10.x
+
+## Release 2.2.4
+
+* Added docstrings to several undocumented functions (#2197)
+* Fix incorrect pypy 2.7-7.3.6 sha256 hashes (#2208)
+* Fix a regression in include paths when compiling ctypes in 3.6.15/3.7.12 (#2209)
+* Revert "Disable coreutils on M1 Apple Silicon with arm64 (#2020)" (#2212)
+* CPython 3.11.0a4 (#2217)
+* CPython 3.9.10 and 3.10.2 (#2219)
+* miniconda3-latest: added Linux-aarch64 (#2221)
+* Add GraalPython 22.0.0 (#2226)
+
+
+## Release 2.2.3
+
+* Add new pypy versions (pypy2.7-7.3.2~7.3.5) to the version list (#2194)
+* Fix Python 3.7.12 compilation on macOS arm64/M1. (#2190)
+* Fix Python 3.6.15 compilation on macOS arm64/M1. (#2189)
+* Add Anaconda3-2021.11 (#2193)
+* CPython 3.11.0a3 (#2187)
+* Fix errant "echo" in README install instructions (#2185)
+* Add Miniforge and Mambaforge 4.10.3-10 (#2184)
+* Add CPython 3.10.1 (#2183)
+* Fix 3.6.15 build on macOS (#2182)
+
 ## Release 2.2.2
 
 * Add support for macOS Apple M1 (#2164)
